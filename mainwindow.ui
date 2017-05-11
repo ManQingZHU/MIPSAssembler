@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>859</width>
+    <height>628</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icon.qrc">
+    <normaloff>:/appIcon/MyIcon.icns</normaloff>:/appIcon/MyIcon.icns</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
+    <item>
+     <widget class="QSplitter" name="splitter_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QSplitter" name="splitter">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QWidget" name="layoutWidget">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="font">
+              <font>
+               <family>Helvetica Neue</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Input</string>
+             </property>
+             <property name="buddy">
+              <cstring>InputTextEdit</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPlainTextEdit" name="InputTextEdit">
+           <property name="font">
+            <font>
+             <family>Courier</family>
+            </font>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="font">
+              <font>
+               <family>Helvetica Neue</family>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Output</string>
+             </property>
+             <property name="buddy">
+              <cstring>InputTextEdit</cstring>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPlainTextEdit" name="OutputTextEdit">
+           <property name="font">
+            <font>
+             <family>Courier</family>
+            </font>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="font">
+         <font>
+          <family>Helvetica Neue</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>Input Type</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QRadioButton" name="Input_asm_check">
+           <property name="font">
+            <font>
+             <family>Helvetica Neue</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>asm</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="Input_bin_check">
+           <property name="font">
+            <font>
+             <family>Helvetica Neue</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>bin</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="Input_coe_check">
+           <property name="font">
+            <font>
+             <family>Helvetica Neue</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>coe</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="font">
+         <font>
+          <family>Helvetica Neue</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>Output Type</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QRadioButton" name="Output_asm_check">
+           <property name="font">
+            <font>
+             <family>Helvetica Neue</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>asm</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="Output_bin_check">
+           <property name="font">
+            <font>
+             <family>Helvetica Neue</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>bin</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="Output_coe_check">
+           <property name="font">
+            <font>
+             <family>Helvetica Neue</family>
+            </font>
+           </property>
+           <property name="text">
+            <string>coe</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="openFile_button">
+        <property name="text">
+         <string>Open File (O)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="saveFile_button">
+        <property name="text">
+         <string>Save File (S)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="InputCleanButton">
+        <property name="font">
+         <font>
+          <family>Helvetica Neue</family>
+         </font>
+        </property>
+        <property name="text">
+         <string>CleanUp Input</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="OutputCleanButton">
+        <property name="font">
+         <font>
+          <family>Helvetica Neue</family>
+         </font>
+        </property>
+        <property name="text">
+         <string>CleanUp Output</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="TranspushButton">
+        <property name="font">
+         <font>
+          <family>Helvetica Neue</family>
+         </font>
+        </property>
+        <property name="text">
+         <string>Build (B)</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>859</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuBar_File">
+    <property name="title">
+     <string>File(&amp;F)</string>
+    </property>
+    <property name="toolTipsVisible">
+     <bool>false</bool>
+    </property>
+    <addaction name="actionopenFile_O"/>
+    <addaction name="actionsave_S"/>
+    <addaction name="actionbuild"/>
+   </widget>
+   <addaction name="menuBar_File"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionsave_S">
+   <property name="icon">
+    <iconset resource="buttonicon.qrc">
+     <normaloff>:/iconimages/save.png</normaloff>:/iconimages/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>saveFile(&amp;S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionopenFile_O">
+   <property name="icon">
+    <iconset resource="buttonicon.qrc">
+     <normaloff>:/iconimages/open.png</normaloff>:/iconimages/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>openFile(&amp;O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionbuild">
+   <property name="icon">
+    <iconset resource="buttonicon.qrc">
+     <normaloff>:/iconimages/tools.png</normaloff>:/iconimages/tools.png</iconset>
+   </property>
+   <property name="text">
+    <string>build</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="buttonicon.qrc"/>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>
