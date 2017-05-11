@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WelcomeWindow</class>
+ <widget class="QDialog" name="WelcomeWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icon.qrc">
+    <normaloff>:/appIcon/MyIcon.icns</normaloff>:/appIcon/MyIcon.icns</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="font">
+          <font>
+           <family>Courier</family>
+           <pointsize>24</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Welcome</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTextBrowser" name="textBrowser">
+       <property name="font">
+        <font>
+         <family>Helvetica Neue</family>
+        </font>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Helvetica Neue'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#454545;&quot;&gt;Welcome! This is my Little MIPS Assembler.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#454545;&quot;&gt;It allows you to freely converse the file among ASM instructions&lt;/span&gt;&lt;span style=&quot; font-family:'.PingFang SC'; color:#454545;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#454545;&quot;&gt; Binary code and COE file.  Use toolbar&lt;/span&gt;&lt;span style=&quot; font-family:'.PingFang SC'; color:#454545;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#454545;&quot;&gt; button or &amp;quot;command+B&amp;quot; to carry out the translation work.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#454545;&quot;&gt;You can open a file as the input using toolbar&lt;/span&gt;&lt;span style=&quot; font-family:'.PingFang SC'; color:#454545;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#454545;&quot;&gt; button or &amp;quot;command+O&amp;quot;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#454545;&quot;&gt;Directly enter word into the Input TextEditor is okay&lt;/span&gt;&lt;span style=&quot; font-family:'.PingFang SC'; color:#454545;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#454545;&quot;&gt; too.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#454545;&quot;&gt;Similarly&lt;/span&gt;&lt;span style=&quot; font-family:'.PingFang SC'; color:#454545;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#454545;&quot;&gt; if you'd like to save the output into a file&lt;/span&gt;&lt;span style=&quot; font-family:'.PingFang SC'; color:#454545;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#454545;&quot;&gt; use toolbar&lt;/span&gt;&lt;span style=&quot; font-family:'.PingFang SC'; color:#454545;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#454545;&quot;&gt; button or &amp;quot;command+S&amp;quot;.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#454545;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#454545;&quot;&gt;It's also worthy to mention that the Assembler supports all 55 different types of instruction&lt;/span&gt;&lt;span style=&quot; font-family:'.PingFang SC'; color:#454545;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#454545;&quot;&gt; including three pseudo-instructions. &lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#454545;&quot;&gt;Please add an &amp;quot;&lt;/span&gt;&lt;span style=&quot; font-family:'.PingFang SC'; color:#454545;&quot;&gt;;&lt;/span&gt;&lt;span style=&quot; font-weight:600; color:#454545;&quot;&gt;&amp;quot; as the ending of every instruction.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#454545;&quot;&gt;You can add comments begin with &amp;quot;#&amp;quot; or &amp;quot;//&amp;quot; in your ASM instructions file.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#454545;&quot;&gt;Data Definition works when you translate an ASM instructions file into Binary code and COE file.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; color:#454545;&quot;&gt;For Data Definition&lt;/span&gt;&lt;span style=&quot; font-family:'.PingFang SC'; color:#454545;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#454545;&quot;&gt; you are expected to use .BaseAddre&lt;/span&gt;&lt;span style=&quot; font-family:'.PingFang SC'; color:#454545;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#454545;&quot;&gt; .baseAddre&lt;/span&gt;&lt;span style=&quot; font-family:'.PingFang SC'; color:#454545;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#454545;&quot;&gt; .DataAddre&lt;/span&gt;&lt;span style=&quot; font-family:'.PingFang SC'; color:#454545;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#454545;&quot;&gt; .dataAddre&lt;/span&gt;&lt;span style=&quot; font-family:'.PingFang SC'; color:#454545;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#454545;&quot;&gt; .DD&lt;/span&gt;&lt;span style=&quot; font-family:'.PingFang SC'; color:#454545;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#454545;&quot;&gt; .dd&lt;/span&gt;&lt;span style=&quot; font-family:'.PingFang SC'; color:#454545;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#454545;&quot;&gt; .DW&lt;/span&gt;&lt;span style=&quot; font-family:'.PingFang SC'; color:#454545;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#454545;&quot;&gt; .dw&lt;/span&gt;&lt;span style=&quot; font-family:'.PingFang SC'; color:#454545;&quot;&gt;,&lt;/span&gt;&lt;span style=&quot; color:#454545;&quot;&gt; .DB and .db.&lt;/span&gt; &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDialogButtonBox" name="buttonBox">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="standardButtons">
+        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>WelcomeWindow</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>WelcomeWindow</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
